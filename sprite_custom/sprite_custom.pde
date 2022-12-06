@@ -33,7 +33,7 @@ int nl8 = 0;
 
 void setup()
 {
-  size(2000,950);
+  size(2000,850);
   //fullScreen();
   beep = new SoundFile(this,"beep.wav");
   //bg = loadImage("mtn1.svg");
@@ -79,7 +79,7 @@ void reset()
   s.addAnimation(files2,10);
   String[] files3 = {"fall1.svg","fall2.svg"};
   s.addAnimation(files3,10);
-  String[] files18 = {"zombiedead.svg"};
+  String[] files18 = {"up1.svg"};
   s.addAnimation(files18,10);
   s.currentAni=0;
   
@@ -222,7 +222,7 @@ void reset()
     l7[i].location.x = (-width/2.0)+(i*5000.0);
     l7[i].addAnimation(files21,10);
     l7[i].randomPlacement=true;
-    l7[i].slowdown = 10.0;
+    l7[i].slowdown = 1;
   }
   
   nl8 = ceil(width/5000.0)+1;
@@ -235,7 +235,7 @@ void reset()
     l8[i].location.x = (-width/2.0)+(i*5000.0);
     l8[i].addAnimation(files22,10);
     l8[i].randomPlacement=true;
-    l8[i].slowdown = 0.5;
+    l8[i].slowdown = 1;
   }
 }
 
@@ -248,7 +248,7 @@ void startScreen()
   textAlign(CENTER,CENTER);
   textFont(f);
   textSize(100);
-  text("COLD RACE",0,-30);
+  text("Good Luck",0,-30);
   textSize(30);
   text("Press ANY key to start and jump",0,30);
 }
